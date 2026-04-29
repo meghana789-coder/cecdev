@@ -86,40 +86,6 @@
 <!-- Chat Option -->
 <div class="card">
 <h2>Chat with Us</h2>
-<p>
-                   Get instant support from our virtual assistant or connect
-                   with a Magnum Care expert.
-</p>
-</div>
-<!-- Contact Us Form -->
-<div class="card">
-<h2>Contact Us</h2>
-<button class="btn" onclick="openForm()">
-    Contact Us Form
-</button>
-
-<script>
-function openForm() {
-    const url = "https://energy-drive-7864--cecdev1.sandbox.my.site.com/s/contact-us";
-    const newWindow = window.open(url, "_blank");
-    const data = {
-        language: 'EN',
-        brand: 'Magnum',
-        country: 'GB',
-        styles: {
-            primaryColor: '#ff6600',
-            fontFamily: 'Arial, sans-serif'
-        }
-    };
-    setTimeout(() => {
-        newWindow.postMessage(data, "https://energy-drive-7864--cecdev1.sandbox.my.site.com");
-    }, 2000); 
-}
-</script>
-</div>
-</div>
-<footer>
-           © 2026 Magnum. All rights reserved.
 	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -146,6 +112,21 @@ function openForm() {
 </script>
 <script type='text/javascript' src='https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438527485/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
+<p>
+                   Get instant support from our virtual assistant or connect
+                   with a Magnum Care expert.
+</p>
+</div>
+<!-- Contact Us Form -->
+<div class="card">
+<h2>Contact Us</h2>
+<button class="btn" onclick="openForm()">
+    Contact Us Form
+</button>
+</div>
+</div>
+<footer>
+           © 2026 Magnum. All rights reserved.
 </footer>
 </div>
 <script type='text/javascript'>

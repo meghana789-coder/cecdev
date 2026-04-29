@@ -120,24 +120,21 @@ function openForm() {
 </div>
 <footer>
            © 2026 Magnum. All rights reserved.
-</footer>
-</div>
-<script type='text/javascript'>
+	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US';
-			window.addEventListener("onEmbeddedMessagingReady", () => {             
-                		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({  
+			embeddedservice_bootstrap.settings.language = 'es'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({  
                                                    "Brand" : "Magnum", 
-                                                   "Country" : "IN",  
-                                                   "Language" : "en_US", 
+                                                   "Country" : "US",  
+                                                   "Language" : "es", 
                                  }); 
 				}); 
 
 			embeddedservice_bootstrap.init(
 				'00D9X00000ZyO3J',
-				'CEC_Live_Chat',
-				'https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECLiveChat1776841198817',
+				'CEC_Magnum_United_States_Spanish',
+				'https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438527485',
 				{
 					scrt2URL: 'https://energy-drive-7864--cecdev1.sandbox.my.salesforce-scrt.com'
 				}
@@ -147,6 +144,35 @@ function openForm() {
 		}
 	};
 </script>
-<script type='text/javascript' src='https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECLiveChat1776841198817/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438527485/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</footer>
+</div>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({  
+                                                   "Brand" : "Magnum", 
+                                                   "Country" : "US",  
+                                                   "Language" : "en_US", 
+                                 }); 
+				}); 
+
+			embeddedservice_bootstrap.init(
+				'00D9X00000ZyO3J',
+				'CEC_Magnum_United_States_English',
+				'https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438250243',
+				{
+					scrt2URL: 'https://energy-drive-7864--cecdev1.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438250243/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
 </html>

@@ -86,32 +86,6 @@
 <!-- Chat Option -->
 <div class="card">
 <h2>Chat with Us</h2>
-	<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'es'; // For example, enter 'en' or 'en-US'
-			window.addEventListener("onEmbeddedMessagingReady", () => { 
-				embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({  
-	                                                   "Brand" : "Magnum", 
-	                                                   "Country" : "US",  
-	                                                   "Language" : "es", 
-	                                 }); 
-			}); 
-			embeddedservice_bootstrap.init(
-				'00D9X00000ZyO3J',
-				'CEC_Magnum_United_States_Spanish',
-				'https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438527485',
-				{
-					scrt2URL: 'https://energy-drive-7864--cecdev1.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://energy-drive-7864--cecdev1.sandbox.my.site.com/ESWCECMagnumUnitedStat1777438527485/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
 <p>
                    Get instant support from our virtual assistant or connect
                    with a Magnum Care expert.

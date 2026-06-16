@@ -83,20 +83,25 @@
            feedback, or compliments.
 </p>
 <div class="options">
-<!-- Chat Option -->
-<div class="card">
-<h2>Chat with Us</h2>
-<p>
-                   Get instant support from our virtual assistant or connect
-                   with a Company Care expert.
-</p>
-</div>
 <!-- Contact Us Form -->
 <div class="card">
 <h2>Contact Us</h2>
 <button class="btn" onclick="openForm()">
     Contact Us Form
 </button>
+	<script>
+function openContactForm() {
+    const ctx = btoa(JSON.stringify({
+	    brand: 'Magnum',
+	    country: 'US'
+	}));
+
+    const url =
+        'https://tmicc--cectest.sandbox.my.site.com/s/contact-us?language=en_US&ctx=' +
+        encodeURIComponent(ctx);
+    window.open(url, '_blank');
+}
+</script>
 </div>
 </div>
 <footer>
